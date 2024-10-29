@@ -1,5 +1,8 @@
-site_name: My site
-site_url: https://courseshare.github.io
+site_name: 数学分享站
+
+repo_url: https://github.com/courseshare/courseshare.github.io
+repo_name: courseshare
+
 theme:
   name: material
 
