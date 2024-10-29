@@ -1,0 +1,8 @@
+site_name: My site
+site_url: https://courseshare.github.io
+theme:
+  name: material
+
+nav:
+  - 首页：index.md
+  - 函数：function.md
