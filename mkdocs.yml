@@ -1,10 +1,15 @@
+# project information
 site_name: 数学分享站
+site_url: https://courseshare.github.io
 repo_url: https://github.com/courseshare/courseshare.github.io
 repo_name: courseshare
-copyright: Copyright © 2024 [courseshare](https://courseshare.github.io)
+copyright: Copyright © 2024 [courseshare]
 
 theme:
   name: material
+  favicon: assets/logo.png
+  logo: assets/logo.png
+  custom_dir: overrides
   icon:
     admonition:
       note: fontawesome/solid/note-sticky
@@ -19,34 +24,84 @@ theme:
       bug: fontawesome/solid/robot
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
+    annotation: material/arrow-right-circle
+  features:
+    - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    - navigation.instant
 
 
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-
-
-markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - abbr
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+  - md_in_html
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+  - javascripts/consent.js
+
+# 扩展css
 extra_css:
   - stylesheets/extra.css
 
-###
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+# cookie
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+      extra:
+    actions:
+      - accept
+      - reject
+      - manage
 
-###
+
+
+
+# encrypt
 plugins:
+    - privacy
     - search: {}
     - encryptcontent:
         password_inventory:
@@ -58,7 +113,9 @@ plugins:
             user4: 'password4'
             user5: 'password5'
 
-###
+# 页面
 nav:
 #  - 首页："index.md"
-  - 函数: 'function.md'
+  - 测试: 'text.md'
+  - 函数与导数: 'function.md'
+
