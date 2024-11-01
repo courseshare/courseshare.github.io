@@ -1,4 +1,3 @@
-# project information
 site_name: 数学分享站
 site_url: https://courseshare.github.io
 repo_url: https://github.com/courseshare/courseshare.github.io
@@ -7,9 +6,10 @@ copyright: Copyright © 2024 [courseshare]
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: assets/logo.png
   logo: assets/logo.png
-  custom_dir: overrides
+
   icon:
     admonition:
       note: fontawesome/solid/note-sticky
@@ -110,7 +110,7 @@ plugins:
             - 'password2'
             - 'password3'
           secret:
-            user4: 'password4'
+            keran: 'wajy'
             user5: 'password5'
 
 # 页面
