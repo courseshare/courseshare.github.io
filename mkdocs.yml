@@ -7,8 +7,24 @@ copyright: Copyright © 2024 [courseshare]
 theme:
   name: material
   custom_dir: overrides
+  language: zh
+
   favicon: assets/logo.png
   logo: assets/logo.png
+  palette:
+    - scheme: default    # Palette toggle for light mode
+      toggle:
+        icon: material/brightness-7 
+        name: 启动暗影模式
+
+    - scheme: slate    # Palette toggle for dark mode
+      toggle:
+        icon: material/brightness-4
+        name: 开启日光模式
+
+  font: 
+    text: Noto Sans SC
+    code: Roboto Mono
 
   icon:
     admonition:
