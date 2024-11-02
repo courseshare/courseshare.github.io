@@ -288,3 +288,6 @@ erDiagram
     * [x] In scelerisque nibh non dolor mollis congue sed et metus
     * [ ] Praesent sed risus massa
 - [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+
+# comments
+关于评论要注意，对于material for mkdocs这个主题他的privacy不能和giscus一起打开，否则会`404 not found`
